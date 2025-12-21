@@ -182,6 +182,132 @@ This is open research. Contributions are welcome:
 - Submit pull requests
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+# Contributing to Anti-Collapse Architecture
+
+Thank you for your interest in contributing to ACA. This project benefits from diverse perspectives and real-world testing.
+
+## Ways to Contribute
+
+### 1. Use It and Report Back
+
+The most valuable contribution is **trying ACA in real scenarios** and sharing what you learn:
+
+- Implement it in your domain
+- Document what works and what doesn't
+- Share use cases and examples
+- Report bugs or unexpected behavior
+
+Create a GitHub Issue or Discussion to share your experience.
+
+### 2. Improve the Code
+
+**Areas that need work:**
+
+- Assumption dependency graphs (assumptions depending on other assumptions)
+- More sophisticated confidence decay algorithms
+- Integration patterns for monitoring systems
+- Performance optimization
+- Language ports (Python, Go, Rust, etc.)
+
+**Contribution process:**
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/assumption-graphs`)
+3. Make your changes with tests
+4. Submit a pull request with clear description
+
+### 3. Expand Documentation
+
+Good contributions include:
+
+- Real-world examples in different domains
+- Architecture decision records
+- Tutorial content
+- API documentation improvements
+- Translation to other languages
+
+### 4. Research and Analysis
+
+Academic or research contributions:
+
+- Formal verification of safety properties
+- Empirical studies of ACA effectiveness
+- Comparative analysis with other approaches
+- Theoretical foundations
+
+If you publish research using ACA, please share it—we'll link to it from the main README.
+
+### 5. Domain-Specific Extensions
+
+Create specialized versions:
+
+- Healthcare decision support
+- Financial system controls  
+- Industrial control systems
+- AI agent governance
+
+Contributions that extend ACA for specific domains are highly valuable.
+
+## Code Standards
+
+- Write clear, readable code with comments explaining *why*, not just *what*
+- Include tests for new functionality
+- Keep commits atomic and well-described
+- Follow existing code style
+- Update documentation for user-facing changes
+
+## Testing
+
+Run tests before submitting:
+
+```bash
+npm test
+```
+
+Add tests for new features:
+
+```javascript
+describe('Assumption Dependencies', () => {
+  it('should block actions when dependency chain fails', () => {
+    // Your test here
+  });
+});
+```
+
+## Communication
+
+- **GitHub Issues** - Bug reports, feature requests
+- **GitHub Discussions** - General questions, use cases, design discussions
+- **Pull Requests** - Code contributions with clear descriptions
+
+Be respectful and constructive. We're all here to build something useful.
+
+## Recognition
+
+Significant contributors will be:
+
+- Listed in CONTRIBUTORS.md
+- Credited in release notes
+- Acknowledged in academic papers or publications
+- Invited to collaborative development efforts
+
+## Commercial Use and Contributions
+
+If you're using ACA commercially:
+
+- You're completely free to do so under MIT license
+- Contributing improvements back helps everyone
+- If you build something significant and want to collaborate or support the project, reach out
+
+The project benefits when commercial users contribute expertise and improvements back to the commons.
+
+## Questions?
+
+Open a GitHub Discussion or reach out directly at [+26776280372].
+
+---
+
+*The goal is collaborative improvement of a useful framework. All contributions that advance that goal are welcome.*
 
 ## Attribution & Recognition
 
