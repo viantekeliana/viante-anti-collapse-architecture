@@ -341,6 +341,185 @@ The architecture emerged from thinking about how systems should behave when they
 
 If you find value in this approach, use it. If you improve it, share it back. If it helps you build something important, let me know.
 
+# Anti-Collapse Architecture: A Cricket Explanation
+
+## The Problem: Systems That Collapse Like Batting Lineups
+
+If you follow cricket, you've seen this pattern hundreds of times: a team goes from 150/2 to 180 all out. Three quick wickets, panic sets in, and suddenly the entire innings collapses.
+
+The same thing happens with automated systems.
+
+A cybersecurity system makes one bad call. Then another. Pressure mounts. Assumptions that were solid an hour ago are now questionable, but the system keeps playing the same shots. Before you know it, you've gone from "manageable incident" to "catastrophic breach."
+
+**Anti-Collapse Architecture exists to prevent that.**
+
+## The Core Insight: Bat According to Conditions
+
+In Test cricket, great batters don't play the same way all the time. They read the pitch:
+
+- **Day 1, fresh pitch** → Play your shots, conditions are good
+- **Day 4, cracks appearing** → Tighten up, respect the conditions
+- **Day 5, pitch breaking up** → Survival mode, defend your wicket
+
+The shot that works on day 1 gets you out on day 5.
+
+Most automated systems don't have this ability. They play the same shots regardless of conditions. ACA gives systems the ability to **read the pitch and adjust their game**.
+
+## How It Works: Making Assumptions Explicit
+
+Every system operates on assumptions, just like every batter makes assumptions about the pitch:
+
+- "The ball will bounce consistently"
+- "The fielders are in their usual positions"
+- "My technique will work in these conditions"
+
+In software:
+
+- "Network telemetry is reliable"
+- "Threat intelligence is current"
+- "The operator understands full context"
+
+**The problem:** Most systems never check if these assumptions are still true.
+
+**ACA's solution:** Track every assumption with a confidence score (0-100%). As confidence drops, the system adjusts its "shot selection."
+
+## Graceful Degradation: Building Partnerships
+
+Great cricket teams don't collapse because they build partnerships. When a key batter falls, others step up. The tail-enders know their job is survival, not glory.
+
+ACA works the same way:
+
+- **High confidence** → System operates normally (full shot range)
+- **Medium confidence** → System becomes selective (fewer risky actions)
+- **Low confidence** → System goes defensive (only safe actions)
+- **Critical state** → Human approval required (captain's call)
+
+The system doesn't fail suddenly. It degrades gracefully, like a team batting out difficult overs rather than throwing wickets away.
+
+## Human-in-the-Loop: The Non-Striker's Call
+
+In cricket, the non-striker often has the better view. A quick "No!" prevents a run-out.
+
+In ACA, humans serve the same role. When the system evaluates an action and finds:
+
+- Confidence is borderline
+- Stakes are high
+- Conditions have changed
+
+It asks for human approval before proceeding. **Not because the system is broken, but because good judgment requires knowing when to take advice.**
+
+The non-striker's call isn't about overriding the striker's ability—it's about preventing dismissals when the view is unclear.
+
+## Confidence Decay: The Pitch Deteriorates
+
+As a Test match progresses, the pitch changes. Cracks open. Bounce becomes variable. What worked in the morning session doesn't work in the evening.
+
+In ACA, assumptions naturally lose confidence over time unless validated:
+
+- Network scan from 5 minutes ago → 95% confidence
+- Network scan from 2 hours ago → 70% confidence  
+- Network scan from yesterday → 40% confidence
+
+The system **automatically tightens its game** as data ages, just like a batter adjusts when the pitch deteriorates.
+
+## Learning from Outcomes: Reading the Pitch Better
+
+Good batters learn:
+
+- "That length gets me in trouble"
+- "I can trust this shot on this pitch"
+- "The ball is doing more than I thought"
+
+ACA does the same. When actions succeed or fail:
+
+- **Success** → Confidence in related assumptions increases slightly
+- **Failure** → Confidence decreases, system becomes more cautious
+
+Over time, the system learns which assumptions are reliable and which aren't—just like a batter learns to read a difficult pitch.
+
+## Cultural Reasoning: Playing Away from Home
+
+Every cricketer knows: away tours are different. The conditions, the crowds, the umpires, the expectations—everything changes.
+
+What works at home can get you out abroad.
+
+ACA includes cultural reasoning for the same reason: **some actions are technically correct but culturally dangerous.**
+
+Examples:
+
+- Publicly shutting down a system (causes organizational embarrassment)
+- Overriding a senior person's decision (challenges hierarchy)
+- Direct confrontation in high-context cultures (violates norms)
+
+The system evaluates not just "is this technically right?" but "will this cause secondary harm given the cultural context?"
+
+It's like knowing that certain shots work in Australia but get you caught at slip in England.
+
+## Why This Matters: Preventing the Collapse
+
+System collapses follow the same pattern as batting collapses:
+
+1. Conditions change (assumptions degrade)
+2. Pressure mounts (urgency increases)
+3. Shot selection doesn't adjust (system keeps acting the same)
+4. One bad decision leads to another (cascade failure)
+5. Collapse (catastrophic failure)
+
+**Anti-Collapse Architecture interrupts this pattern.**
+
+It forces the system to:
+
+- **Read conditions** (track assumption confidence)
+- **Adjust shot selection** (restrict actions as confidence drops)
+- **Build partnerships** (no single point of failure)
+- **Take advice** (human approval when needed)
+- **Survive difficult overs** (safe mode when conditions are hostile)
+
+## The Cricket Mindset
+
+The best Test teams don't try to score quickly in every situation. They recognize:
+
+- Sometimes you bat for time
+- Sometimes you defend your wicket
+- Sometimes you take the safe option
+- Sometimes you wait for better conditions
+
+**ACA brings that same judgment to automated systems.**
+
+It's not about playing slower. It's about playing appropriately for conditions.
+
+It's not about avoiding risk. It's about taking risks only when you can afford them.
+
+It's not about preventing action. It's about preventing collapse.
+
+## In One Sentence
+
+> Anti-Collapse Architecture helps systems bat out difficult conditions rather than throw their wickets away chasing risky shots.
+
+---
+
+## Why This Is Pertinent Now
+
+We're building increasingly autonomous systems—AI agents, automated security, infrastructure control, financial algorithms. These systems make decisions faster than humans can intervene.
+
+But they're also **making those decisions based on assumptions they never question.**
+
+When conditions change:
+- Markets shift
+- Threats evolve  
+- Networks degrade
+- Context shifts
+
+...these systems keep playing the same shots. And then they collapse.
+
+We need systems that can read the pitch, adjust their game, and bat for time when conditions turn hostile.
+
+That's what Anti-Collapse Architecture provides.
+
+**Because the goal isn't brilliance in ideal conditions—it's survival and composure when conditions turn against you.**
+
+Just like Test cricket.
+
 ## Contact
 
 - **GitHub**: [Rodney Manyakaidze]
