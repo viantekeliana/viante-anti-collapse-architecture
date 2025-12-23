@@ -1,21 +1,53 @@
-MIT License
+Anti-Collaspe Architecture LICENSE
+Version 1.0
 
-Copyright (c) 2025 Rodney Manyakaidze 
+Copyright (c) [2025]
+[Rodney Manyakaidze / Keliana Vianté on Facebook]
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+--------------------------------------------------
+NON-COMMERCIAL LICENSE (FREE)
+--------------------------------------------------
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+Permission is hereby granted to any individual or organization to view,
+use, reproduce, and modify this work for non-commercial purposes only,
+including research, education, evaluation, and personal use.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+Non-commercial use explicitly excludes any use that:
+- is part of a product or service offered for sale
+- generates revenue directly or indirectly
+- provides commercial, competitive, or strategic advantage
+- is used within a for-profit organization beyond evaluation or research
+
+Attribution must be preserved.
+
+This license does not grant the right to sublicense this work for
+commercial purposes.
+
+--------------------------------------------------
+COMMERCIAL LICENSE (PAID)
+--------------------------------------------------
+
+Any commercial use of this work requires a separate, explicit
+commercial license agreement.
+
+Commercial use includes, but is not limited to:
+- integration into commercial software or services
+- use in AI systems deployed for business purposes
+- consulting, advisory, or professional services
+- internal use within for-profit organizations beyond evaluation
+- derivative works used commercially
+
+To obtain a commercial license, contact:
+
+[Your contact email or website]
+
+--------------------------------------------------
+DISCLAIMER
+--------------------------------------------------
+
+This work is provided "as is", without warranty of any kind.
+The authors are not liable for damages arising from its use.
+
+--------------------------------------------------
+END OF LICENSE
+--------------------------------------------------
